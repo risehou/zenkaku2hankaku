@@ -3,7 +3,7 @@ function zenkaku2hankaku(id) {
 
         var str = document.getElementById(id).value;
 
-        if (id == "TEL_1") {
+        if (id == "TEL") {
             str = str.replaceAll("-", "");
             str = str.replaceAll("－", "");
             str = str.replaceAll("/", "");
@@ -25,7 +25,7 @@ function zenkaku2hankaku(id) {
                 });
                 document.getElementById(id).value = out;
             }
-        } else if ("Email") {
+        } else if ("EMAIL") {
             str = str.replaceAll(" ", "");
             str = str.replaceAll("　", "");
             var out = str.replace(/[Ａ-Ｚａ-ｚ０-９]/g, function (s) {
