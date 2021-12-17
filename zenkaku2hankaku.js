@@ -19,10 +19,7 @@ function zenkaku2hankaku($this) {
         } else if (id == "YUBIN") {
             str = str.replaceAll("-", "");
             str = str.replaceAll("/", "");
-        } else if ("EMAIL") {
-            str = str.replaceAll(" ", "");
-            str = str.replaceAll("　", "");
-        }else{
+        } else{
             str = str.replaceAll(" ", "");
             str = str.replaceAll("　", "");
         }
